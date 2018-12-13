@@ -1,0 +1,38 @@
+<script>
+  $(document).ready(function () {
+
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+    });
+
+    autoplay();
+
+    function autoplay() {
+      $('.carousel.carousel-slider').carousel('next');
+      setTimeout(autoplay, 4500);
+    }
+
+  });
+</script>
+
+<div class="carousel carousel-slider">
+  <a class="carousel-item" href="#one!"><img src="images/1.jpg" class=" img-thumbnail"></a>
+  <a class="carousel-item" href="#two!"><img src="images/2.jpg" class=" img-thumbnail"></a>
+  <a class="carousel-item" href="#three!"><img src="images/3.png" class=" img-thumbnail"></a>
+  <a class="carousel-item" href="#four!"><img src="images/4.jpg" class=" img-thumbnail"></a>
+</div>
+
+<div class="col s12 mt-1">
+  <div class="row mt-2">
+    <div class="col s6" ng-repeat="obj in [1,2,3,4]">
+      <div class="card" ng-click="RedirectToDetails(obj)">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/{{obj}}.jpg" height="120">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

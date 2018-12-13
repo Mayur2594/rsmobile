@@ -1,0 +1,17 @@
+{
+  "name": "fw7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayur Mhatre",
+  "license": "ISC",
+  "dependencies": {
+    "angularjs": "0.0.1",
+    "express": "^4.16.4",
+    "framework7": "^3.6.2",
+    "materialize-css": "^1.0.0"
+  }
+}

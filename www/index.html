@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <!-- Path to your custom app styles-->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/materialize.min.css" />
+  <link rel="stylesheet" href="css/materialize.scss" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/AppLocation.js"></script>
+
+</head>
+
+<body ng-app="AngularApp" ng-controller="myCtrl">
+  <div ng-include="'./Navbar.html'"></div>
+  <div class="row mt-6">
+    <div id="home" class="row">
+      <div ng-include="'./Tab_home.html'"></div>
+    </div>
+    <div id="explore" class="col s12">
+
+        <div ng-include="'./Tab_explore.html'"></div>
+
+    </div>
+    <div id="cart" class="col s12"><a href="#test4">Go to tab 4</a></div>
+    <div id="account" class="col s12"><a href="#test1">Go to tab 1</a></div>
+
+    <div class="col s12 no-pd fixed-tab-bottom">
+      <ul class="tabs tabs-icon">
+        <li class="tab col s3"><a href="#home"><i class="material-icons">home</i>Home</a></li>
+        <li class="tab col s3"><a href="#explore"><i class="material-icons">search</i>Explore</a></li>
+        <li class="tab col s3"><a href="#cart"><i class="material-icons">shopping_cart</i>Cart</a></li>
+        <li class="tab col s3"><a href="#account"><i class="material-icons">face</i>Account</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
