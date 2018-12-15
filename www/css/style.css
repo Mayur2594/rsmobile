@@ -33,8 +33,7 @@ body {
     padding: 0 !important
 }
 
-#iconlike
-{
+#iconlike {
     font-size: 35px;
 }
 
@@ -42,7 +41,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 2 !important;
-    background-image: linear-gradient(to right, #FFCC33, #FF9933);
+    background-color: white !important;
     /* Standard syntax (must be last) */
 }
 
@@ -58,7 +57,7 @@ body {
 }
 
 .mt-6 {
-    margin-top: 5.9rem !important
+    margin-top: 4.2rem !important
 }
 
 .mb-6 {
@@ -72,6 +71,13 @@ body {
     border-radius: .75rem;
     max-width: 100%;
     height: 150px;
+}
+
+.thumbnail-img
+{
+    padding: .1rem;
+    border-radius: .5rem;
+    max-width: 100%;
 }
 
 .m-0 {
@@ -425,7 +431,113 @@ nav .nav-wrappersub {
 
 }
 
-.btnaddcart
-{
+.btnaddcart {
     background-image: linear-gradient(to right, #A7F432, #00CC99);
+}
+
+.mdl-badge {
+    position: relative;
+    white-space: nowrap;
+    margin-right: 24px
+}
+
+.mdl-badge:not([data-badge]) {
+    margin-right: auto
+}
+
+.mdl-badge[data-badge]:after {
+    content: attr(data-badge);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: -11px;
+    right: -24px;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgb(247, 138, 14);
+    color: #fff
+}
+
+.mdl-button .mdl-badge[data-badge]:after {
+    top: -10px;
+    right: -5px
+}
+
+.mdl-badge.mdl-badge--no-background[data-badge]:after {
+    color: rgb(247, 138, 14);
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 1px gray
+}
+
+
+
+.addtext {
+    display: inline-block;
+    width: 320px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    top: 40px;
+}
+
+
+.retroname {
+    display: inline-block;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.material-icons.icon,
+.material-label {
+    font-size: 2em;
+    line-height: 1;
+    display: block;
+    color: #424242;
+    margin: .5em 0
+}
+
+
+
+.material-icons.mdl-badge[data-badge]::after,
+.material-label.mdl-badge[data-badge]::after {
+    font-size: .18em;
+    width: 2em;
+    height: 2em;
+}
+
+.material-icons.mdl-badge[data-badge]::after {
+    top: -1em;
+    right: .25em;
+}
+
+.dots
+{
+    border-top:1.3px dotted rgb(71, 70, 65);
 }

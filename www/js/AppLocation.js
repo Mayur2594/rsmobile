@@ -30,5 +30,13 @@ app.controller('myCtrl', function($scope) {
         $scope.$apply();
     };
 
+     $scope.hitlike = function(index)
+    {
+        console.log(index)
+        var elm = document.getElementById("fav"+index);
+        console.log(elm)
+        elm.classList.toggle("fa-heart");
+    };
+
 
 });
